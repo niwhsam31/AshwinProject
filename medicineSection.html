@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medicineSection.css">
+</head>
+<body>
+    <div class="navBar">
+        <div id="logoImage"></div>
+        <div id="homeDiv"><a id="home" class="options">Home</a></div>
+        <div id="reportsDiv"><a id="reports" class="options">Reports</a></div>
+        <div id="medicineDiv"><a id="medicine" class="options">Medicine</a></div>
+        <div id="schedulerDiv"><a id="scheduler" class="options">Scheduler</a></div>
+        <div id="helpDiv"><a id="help" class="options">Help</a></div>
+        <button id="account"><img src="avatar.svg" id="avatar"></button>
+    </div>
+    <div class="sideOptions">
+        <div class="above">
+            <h3 id="opt1"><span><input type="radio" name="above" value="all" id="check1"></span> All</h3>
+            <h3 id="opt2"><span><input type="radio" name="above" value="Morning" id="check2"></span> Morning</h3>
+            <h3 id="opt3"><span><input type="radio" name="above" value="Afternoon" id="check3"></span> Afternoon</h3>
+            <h3 id="opt4"><span><input type="radio" name="above" value="Evening" id="check4"></span> Evening</h3>
+        </div>
+        <div class="below">
+            <h3 id="opt5"><span><input type="radio" name="all" value="all" id="check5"></span> Tablets</h3>
+            <h3 id="opt6"><span><input type="radio" name="all" value="all" id="check6"></span> Syrups</h3>
+            <h3 id="opt7"><span><input type="radio" name="all" value="all" id="check7"></span> Injections</h3>
+        </div>
+    </div>
+    <div class="mainBody">
+        <div class="addMed">
+            <img src="plus.svg" id="plusSvg">
+            <p id="text">Add Medicine</p>
+        </div>
+        <div class="addMed2">
+            <input type="text" placeholder="Medicine Name" id="medName">
+
+            <div class="t">
+                <h3 id="daily"><span><input type="radio" name="time" value="daily" id="check8"></span> Daily</h3>
+                <h3 id="weekly"><span><input type="radio" name="time" value="weekly" id="check9"></span> Weekly</h3>
+                <h3 id="asReq"><span><input type="radio" name="time" value="asReq" id="check10"></span> As Required</h3>
+            </div>
+
+            <input type="text" id="per">
+            <input type="text" id="day">
+        </div>
+
+        <div class="addedmed">
+            <h3 id="addedMedName">Paracitamol</h3>
+            <h3 id="noPerDay">3</h3>
+            <h3 id="unit">Pills</h3>
+            <h3 id="times">Daily</h3>
+            <h3 id="upto">upto: 1 week</h3>
+        </div>
+
+    </div>
+    <script>
+        let addMed = document.querySelector(".addMed");
+
+    </script>
+</body>
+</html>
